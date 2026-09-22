@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef5f0;
+    color: #1f2937;
+}
+
+.encabezado {
+    padding: 32px 16px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #14532d,
+        #15803d
+    );
+}
+
+.encabezado h1 {
+    margin: 0 0 8px;
+}
+
+.encabezado p {
+    margin: 0;
+}
+
+.principal {
+    width: min(1120px, 94%);
+    margin: 0 auto;
+    padding: 30px 0 50px;
+    text-align: center;
+}
+
+.ultima-medicion {
+    margin-bottom: 25px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(210px, 1fr)
+    );
+    gap: 20px;
+}
+
+.tarjeta {
+    padding: 24px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.icono {
+    display: block;
+    font-size: 2.5rem;
+}
+
+.tarjeta h3 {
+    margin: 12px 0;
+}
+
+.valor {
+    margin: 0;
+    color: #15803d;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.valor.texto {
+    font-size: 1.4rem;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 25px;
+    border-radius: 10px;
+    color: white;
+    background: #15803d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background: #14532d;
+}
